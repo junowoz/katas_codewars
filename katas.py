@@ -35,3 +35,14 @@ def past(h, m, s):
     return h * 3600000 + m * 60000 + s * 1000
 
 past(0,1,1)
+
+################################################################################################
+#3
+#Create a function which answers the question "Are you playing banjo?".
+#If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+def are_you_playing_banjo(name):
+    if (name.startswith("R") or name.startswith("r")):
+        return name + " plays banjo" 
+    else:
+        return name + " does not play banjo"
