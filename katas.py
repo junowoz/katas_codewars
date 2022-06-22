@@ -1,4 +1,8 @@
 # Python Kata Training
+# Codewars Challenges
+# author: junowoz
+
+################################################################################################
 
 #1
 #Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. 
@@ -17,6 +21,7 @@ def lovefunc( flower1, flower2 ):
     
 lovefunc(5, 5);
 
+################################################################################################
 #2        
 #Your task is to write a function which returns the time since midnight in milliseconds.
 #Example:
