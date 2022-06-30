@@ -2,8 +2,7 @@
 # Codewars Challenges
 # author: junowoz
 
-################################################################################################
-
+#################################################################################################################################################################
 #1
 #Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. 
 #If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
@@ -21,7 +20,7 @@ def lovefunc( flower1, flower2 ):
     
 lovefunc(5, 5);
 
-################################################################################################
+#################################################################################################################################################################
 #2        
 #Your task is to write a function which returns the time since midnight in milliseconds.
 #Example:
@@ -36,7 +35,7 @@ def past(h, m, s):
 
 past(0,1,1)
 
-################################################################################################
+#################################################################################################################################################################
 #3
 #Create a function which answers the question "Are you playing banjo?".
 #If your name starts with the letter "R" or lower case "r", you are playing banjo!
@@ -47,7 +46,7 @@ def are_you_playing_banjo(name):
     else:
         return name + " does not play banjo"
 
-################################################################################################
+#################################################################################################################################################################
 #4
 #Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
 
@@ -65,5 +64,18 @@ def get_grade(s1, s2, s3):
     elif (0 <= score < 60):
         return 'F'
 
-################################################################################################
+#################################################################################################################################################################
 #5
+#We need a function that can transform a string into a number. What ways of achieving this do you know?
+#Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+def string_to_number(s):
+    # your code here
+    return int(s)
+
+#################################################################################################################################################################
+#6
+#Write a function which calculates the average of the numbers in a given list.
+#Note: Empty arrays should return 0.
+def find_average(numbers):
+    return sum(numbers) / len(numbers)
+         
