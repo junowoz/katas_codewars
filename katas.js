@@ -102,3 +102,12 @@ function greet (name, owner) {
       else
         return 'Hello guest'
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/** 7
+ * Sure, this is about as easy as it gets. 
+ * But how clever can you be to create the most creative hello world you can think of?
+ * What is a "hello world" solution you would want to show your friends?
+ */
+// Write a function "greet" that returns "hello world!"
+const greet = greet => 'hello world!'
