@@ -80,4 +80,7 @@ def find_average(numbers):
     return sum(numbers) / len(numbers)
          
 #################################################################################################################################################################
-#7
+#7 Beginner Series #4 Cockroach
+def cockroach_speed(s):
+    if(s > 0):
+        
