@@ -120,3 +120,50 @@ const greet = greet => 'hello world!'
 function smash(words) {
   return words.join(" ");
 }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 9
+/*
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+The output should be two capital letters with a dot separating them.
+It should look like this:
+Sam Harris => S.H
+patrick feeney => P.F
+ */
+function abbrevName(name){
+  const nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 10
+/*
+Simple, remove the spaces from the string, then return the resultant string.
+ */
+function noSpace(x){
+  return x.replace(/ /g, '')
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+ */
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+  for (let index = 0; index < nums.length; index++) {
+    const diff = target - nums[index];
+    const diffIndex = nums.indexOf(diff);
+    // "diffIndex !== index" takes care of same index not being reused
+    if (diffIndex !== -1 && diffIndex !== index) {
+      return [index, diffIndex];
+    }
+  }
+};
+
